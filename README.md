@@ -40,14 +40,21 @@ A modern, responsive weather dashboard built with React and TypeScript, providin
 
 ## Screenshots
 
-| Desktop Dashboard | Weather Details |
+| Desktop Dashboard | Mobile Dashboard|
 |:---:|:---:|
-| ![Desktop Dashboard](public/screenshots/desktop.png) | ![Weather Details](public/screenshots/details.png) |
+| ![Desktop Dashboard](public/screenshots/desktop.png) |  ![Mobile Dashboard](public/screenshots/mobile.png) |
 
-| Additional Weather Details | Mobile Dashboard |
+|  Weather Details | Additional Weather Details |
 |:---:|:---:|
-| ![Additional Details](public/screenshots/details%202.png) | ![Mobile Dashboard](public/screenshots/mobile.png) |
+| ![Additional Details](public/screenshots/details%202.png) |  ![Weather Details](public/screenshots/details.png) |
 
 ## Live Demo
 
 Coming soon — deployment in progress.
+
+## Author
+
+**Mohamed Gaber**
+
+Frontend Developer | React & TypeScript
+
