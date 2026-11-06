@@ -1,75 +1,53 @@
-# React + TypeScript + Vite
+# Climora – Weather Intelligence Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive weather dashboard built with React and TypeScript, providing real-time weather conditions, detailed forecasts, air quality insights, and interactive weather visualization.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Real-Time Weather:** View current weather conditions and essential meteorological information.
+- **Hourly Forecast:** Explore upcoming weather conditions through hourly forecasts.
+- **7-Day Forecast:** Get an overview of weather conditions for the next seven days.
+- **Air Quality Monitoring:** Access air quality information and pollutant levels.
+- **Interactive Weather Map:** Visualize weather conditions using interactive maps and different weather layers.
+- **Location Search:** Search for cities and retrieve their weather information.
+- **Predefined Locations:** Quickly switch between predefined locations.
+- **Responsive Design:** Optimized layouts for desktop and mobile devices.
+- **Light & Dark Themes:** Switch between light and dark appearance modes.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** – Component-based UI development.
+- **TypeScript** – Static typing and improved code reliability.
+- **Tailwind CSS** – Utility-first styling and responsive layouts.
+- **shadcn/ui** – Reusable and customizable UI components.
+- **TanStack Query (React Query)** – Server-state management, caching, and data synchronization.
+- **Zod** – Runtime validation of API responses.
+- **React-Leaflet** – Interactive map integration.
+- **OpenWeather API** – Weather forecasts and air quality data.
 
-## Expanding the ESLint configuration
+## Key Concepts & Implementation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **API Integration:** Fetching and handling external weather data.
+- **Server-State Management:** Managing asynchronous API data using TanStack Query.
+- **Suspense Queries:** Handling asynchronous data loading with React Suspense.
+- **Skeleton Loaders:** Improving perceived loading performance with placeholder UI.
+- **Responsive Design:** Building adaptive layouts for different screen sizes.
+- **State Management:** Managing application state and user interactions.
+- **Theme Management:** Implementing light and dark modes.
+- **Runtime Validation:** Ensuring API responses match expected data structures using Zod.
+- **Component-Based Architecture:** Building reusable and maintainable UI components.
+## Screenshots
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Screenshots
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| Desktop Dashboard | Weather Details |
+|:---:|:---:|
+| ![Desktop Dashboard](public/screenshots/desktop.png) | ![Weather Details](public/screenshots/details.png) |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Additional Weather Details | Mobile Dashboard |
+|:---:|:---:|
+| ![Additional Details](public/screenshots/details%202.png) | ![Mobile Dashboard](public/screenshots/mobile.png) |
 
-```
+## Live Demo
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+Coming soon — deployment in progress.
