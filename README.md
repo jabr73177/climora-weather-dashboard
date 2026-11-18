@@ -2,6 +2,10 @@
 
 A modern, responsive weather dashboard built with React and TypeScript, providing real-time weather conditions, detailed forecasts, air quality insights, and interactive weather visualization.
 
+##  Live Demo
+
+[Explore Climora – Live Weather Dashboard](https://climora-weather-dashboard.vercel.app/)
+
 ## Features
 
 - **Real-Time Weather:** View current weather conditions and essential meteorological information.
@@ -48,9 +52,6 @@ A modern, responsive weather dashboard built with React and TypeScript, providin
 |:---:|:---:|
 | ![Additional Details](public/screenshots/details%202.png) |  ![Weather Details](public/screenshots/details.png) |
 
-## Live Demo
-
-Coming soon — deployment in progress.
 
 ## Author
 
